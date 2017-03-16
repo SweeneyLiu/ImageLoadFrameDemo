@@ -8,12 +8,42 @@
     tools:context="com.lsw.demo.MainActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/image_load_button"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Universal Image Loader "
         app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/fresco_button"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Fresco"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/image_load_button"
+        tools:layout_editor_absoluteX="8dp"/>
+
+    <Button
+        android:id="@+id/glide_button"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Glide"
+        app:layout_constraintTop_toBottomOf="@+id/fresco_button"
+        tools:layout_editor_absoluteX="8dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/picasso_button"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Picasso"
+        app:layout_constraintTop_toBottomOf="@+id/glide_button"
         tools:layout_editor_absoluteX="8dp"
         android:textAllCaps="false"/>
 </android.support.constraint.ConstraintLayout>
